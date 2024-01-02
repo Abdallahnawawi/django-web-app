@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listings</title>
+</head>
+<body>
+    <h1>Hello Django !</h1>
+    <p>J'ai {{ bands|length }} groupe(s) préféré(s):</p>
+    <ul>
+        {% for band in bands %}
+        <li>{{ band.name|upper }}</li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
